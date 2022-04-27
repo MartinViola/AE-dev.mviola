@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body class="dflex column">
+    <header class="dflex space-between align-center">
+        <img src="./assets/logo.jpeg" alt="amazing events logo">
+        <div class="dflex">
+            <nav class="dflex">
+                <a href="./index.html">Inicio</a>
+                <a href="./future.html">Future events</a>
+                <a href="./past.html">Past events</a>
+            </nav>
+            <nav class="dflex">
+                <a id="current" href="#">Register</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <form action="./show_data.html">
+                <fieldset>
+                    <label for="fullname">Nombre Completo:</label>
+                    <input name="fullname" id="fullname" type="text" placeholder="Nombre y apellido" required>
+                    <label for="password">Contraseña:</label>
+                    <input name="password" id="password" type="password" placeholder="Contraseña" required>
+                    <label for="isuer">Tipo de usuario:</label>
+                    <select name="user" id="iuser" required != 0>
+                        <option value="0">Seleccione...</option>
+                        <option value="student">Estudiante</option>
+                        <option value="teacher">Docente</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" placeholder="email@email.email" required>
+                    <label for="passConfirm">Contraseña (confirmacion):</label>
+                    <input name="passConfirm" id="passConfirm"type="password" placeholder="contraseña" required>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <input name="agreement" id="agreement" type="checkbox" required>
+                        <label for="agreement">Acepto los terminos y condiciones</label>
+                    </div>
+                    <input name="btnsubmit" id="btnsubmit" type="submit" value="Continuar">
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+        <p>Derechos Reservados @2022</p>
+    </footer>
+</body>
+</html>

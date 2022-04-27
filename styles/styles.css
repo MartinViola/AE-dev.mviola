@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    padding: 1rem;
+    background-image: url(../assets/header.webp);
+    background-size: cover;
+    background-position: 0% 80%;
+    border-bottom: 5px solid black;
+}
+span{
+    color: red;
+}
+.imgCartas{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+}
+header>img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    filter: invert(100%);
+}
+nav>a{
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    margin: 0 0 0 0.25rem;
+    text-decoration: none;
+    background-color: rgb(205, 138, 50);
+}
+#current{
+    color: white;
+}
+main{
+    background-image: linear-gradient(to bottom right, rgb(29, 29, 29), rgb(199, 115, 199));
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+main>a{
+    align-self: flex-end;
+}
+#todosfuturos, #todospasados{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div>article{
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: rgb(76, 123, 194);
+    min-width: 310px;
+    width: 33vw;
+}
+.filter{
+    width: 300px;
+}
+#cardsfuturo{
+    width: 72vw;
+    flex-wrap: wrap;
+}
+#cardspasado{
+    width: 72vw;
+    flex-wrap: wrap;
+}
+div a{
+    align-self: flex-end;
+}
+h1, h2, main p{
+    margin: 0.5rem;
+
+}
+form{
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: 760px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+label{
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+}
+form>fieldset{
+    min-width: 310px;
+    width: 380px;
+    padding: 0 10px 0 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+footer>p{
+    text-align: center;
+}
+.date{
+    color: rgb(66, 66, 66);
+}
+.price{
+    color: yellow;
+}
+.guests{
+    color: rgb(0, 90, 0);
+}
+table, th, td{
+    border: 1px solid black;
+    color: greenyellow;
+}
+/* CLASES GENERALES */
+.dflex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+/* MEDIA QUERY */
+@media all and (max-width:640px) {
+    header{
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+
+    }   
+    main div{
+        display: flex;
+        flex-direction: column;
+    }
+    header>img{
+        margin-bottom: 1rem;
+    }
+
+}
+@media all and (max-width:760px) {
+    form{
+        width: 380px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* @media all and (max-width:1000px) {
+    header{
+        padding: 1rem;
+        flex-direction: column;
+    }   
+    main div{
+        flex-direction: column;
+    }
+    header>img{
+        margin-bottom: 1rem;
+    }
+} */
